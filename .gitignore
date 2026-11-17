@@ -36,5 +36,5 @@ build/
 .vscode/
 
 ### Mac OS ###
-.dS_Store
+.DS_Store
 .idea/
