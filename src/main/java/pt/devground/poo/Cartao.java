@@ -1,7 +1,5 @@
 package pt.devground.poo;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.math.BigDecimal;
 
 
@@ -10,9 +8,8 @@ public class Cartao implements MetodoPagamento {
     private static final String NOME = "Cartão";
 
     @Override
-    public BigDecimal calcularTaxa(@NotNull BigDecimal valor) {
+    public BigDecimal calcularTaxa(BigDecimal valor) {
         return valor.multiply(PERCENTAGEM_TAXA);
-
     }
 
     @Override

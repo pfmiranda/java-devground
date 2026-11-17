@@ -18,7 +18,6 @@ public class AppPagamentos {
         for (MetodoPagamento m : metodos) {
             BigDecimal taxa = m.calcularTaxa(valor).setScale(2, RoundingMode.HALF_UP);
             System.out.println(m.nome() + ": " + taxa + " €");
-            
         }
     }
 

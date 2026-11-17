@@ -4,11 +4,11 @@ import java.math.BigDecimal;
 
 public class MBWay implements MetodoPagamento {
     private static final BigDecimal TAXA = new BigDecimal("0.10");
-    private static final String NOME = "MBWay";
+    private static final String NOME = "MB Way";
 
     @Override
     public BigDecimal calcularTaxa(BigDecimal valor) {
-        return valor.add(TAXA);
+        return TAXA;
     }
 
     @Override
